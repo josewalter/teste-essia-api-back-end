@@ -1,4 +1,5 @@
 INSTRUÇÕES DA API ESSIA
+
 OBS: Para rodar a API localmente, faça um clone do projeto, instele o MySQL na sua maquina ou crie um container Docke das duas formas funciona adicione as  regras de usuário 
 senha e as siga as intruções de instalação do MySQL na sua máquina que vc pode ver em qualquer tutorial no youtube ou na documentação da Oracle.
 Criar a base da dados no MySQL.
