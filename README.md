@@ -17,3 +17,14 @@ O Spring Boot 3.4.0 vai gerar as tabelas e adcionar os dados já existentes se t
 # 5° passo fazer o build do projeto
 RODAR O COMANDO build: Crique como botão direito do mouse na raiz do projeto, vai até a opção Maven e ai clique em (RELOAD PROJECT) para que o Maven atualize as dependêcias do
 projeto.
+
+# 6° passo url usadas para teste
+POST http://localhost:8080/clientes
+GET http://localhost:8080/clientes
+GET POR ID http://localhost:8080/clientes/60bca048-bd4d-48fc-9dd8-4416f93b7928
+PUT http://localhost:8080/clientes/60bca048-bd4d-48fc-9dd8-4416f93b7928
+DELETE http://localhost:8080/clientes/3ef5af16-13f9-4833-9e63-7c585308a46e
+
+
+
+
