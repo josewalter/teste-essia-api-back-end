@@ -25,6 +25,9 @@ GET POR ID http://localhost:8080/clientes/60bca048-bd4d-48fc-9dd8-4416f93b7928
 PUT http://localhost:8080/clientes/60bca048-bd4d-48fc-9dd8-4416f93b7928
 DELETE http://localhost:8080/clientes/3ef5af16-13f9-4833-9e63-7c585308a46e
 
+# 7° passo comando para rodar o docker
+docker-compose -f mysql-docker-compose.yml up -d
+
 
 
 
