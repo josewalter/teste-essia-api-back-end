@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @ControllerAdvice
-public class JaylineFashionExceptionHandler extends ResponseEntityExceptionHandler {
+public class TestEssiaExceptionHandler extends ResponseEntityExceptionHandler {
 
      @Autowired
      private MessageSource messageSource;

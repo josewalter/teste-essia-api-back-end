@@ -19,7 +19,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping
-@CrossOrigin(origins = "4200")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ClienteController {
 
 	@Autowired
@@ -42,7 +42,7 @@ public class ClienteController {
 	public ResponseEntity<Object> getOneCliente(@PathVariable(value = "idCliente")UUID idCliente) {
 		Optional<Cliente> clienteOptional = clienteService.getById(idCliente);
 		if(clienteOptional.isEmpty()){
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Customer not found!");
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Cliente não encontrado!");
 		}
 		return ResponseEntity.status(HttpStatus.OK).body(clienteOptional.get());
 	}
