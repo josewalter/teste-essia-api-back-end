@@ -36,6 +36,7 @@ Senha:12345
 # 7°.1 passo configurando o properties
  Fazer a configuração no properties para que a aplicação se  conecte com o container e vc possa estar usando o banco de dados em conta-
 iner, não vou colocar o passo a passo porque essas configurações são basicas então acredito que vcs consigam fazer sem as instruços.
+Pode ser usado a interface: PhpAdmin, DBeaver, Workbenck.
 
 
 
