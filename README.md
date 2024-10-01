@@ -38,6 +38,12 @@ Senha:12345
 iner, não vou colocar o passo a passo porque essas configurações são basicas então acredito que vcs consigam fazer sem as instruços.
 Pode ser usado a interface: PhpAdmin, DBeaver, Workbenck.
 
+# 7°.2 passo Criando a imagem docker da api
+Comando para gerar o build da imagem dokcerfile: docker image build -t testeessia .
+Comando para subir a imagem e manter a imagem no ar: docker container run -p 8080:8080 testeessia
+Comando para subir a imagem e encerrar: docker container run --rm -p 8080:8080 testeessia
+
+
 
 
 

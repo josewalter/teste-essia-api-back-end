@@ -1,13 +1,18 @@
 package com.testessiaapi.domain;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.time.Instant;
 import java.util.UUID;
 
 @Data
@@ -36,7 +41,4 @@ public class Cliente implements Serializable {
 
     @Column(name = "telefone_celular", length = 14, nullable = false)
     private String telefoneCelular;
-
-   public Cliente(UUID uuid, String carmem, String s, String mail, String s1, Instant now, Object o) {
-    }
 }
