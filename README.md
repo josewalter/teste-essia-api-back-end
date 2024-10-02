@@ -43,6 +43,20 @@ Comando para gerar o build da imagem dokcerfile: docker image build -t testeessi
 Comando para subir a imagem e manter a imagem no ar: docker container run -p 8080:8080 testeessia
 Comando para subir a imagem e encerrar: docker container run --rm -p 8080:8080 testeessia
 
+# 7°.2 passos para subir os containers na network
+Comando para fazer o build da aplicação back-end
+docker image build -t testeessia .
+
+Comando para subir o container do MySQL
+docker container run -d -p 3307:3307 -e MYSQL_ROOT_PASSWORD=12345 --network testeessia-network --name testeessia-mysql mysql:8.0
+
+Comando para subir a aplicação back-end
+docker container run -d -p 8080:8080 -e DB_HOST=testeessia-mysql --network testeessia-network  testeessia
+
+
+Comando para subir a network com o Front-end
+docker container run -d -p 4200:4200 -e angular-essia --network testeessia-network  angular-essia 
+
 
 
 
